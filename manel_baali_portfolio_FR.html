@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Manel Baali – Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Lato',sans-serif; background:#f5ede3; color:#2c1810; width:210mm; margin:0 auto; }
+  .header { background:linear-gradient(135deg,#59372b 0%,#9f624f 60%,#cca98d 100%); color:#f7e7ce; padding:38px 50px 28px; display:flex; justify-content:space-between; align-items:flex-end; }
+  .header-left h1 { font-family:'Playfair Display',serif; font-size:36px; letter-spacing:1px; margin-bottom:4px; }
+  .header-left .subtitle { font-size:12px; font-weight:300; letter-spacing:3px; text-transform:uppercase; color:#f7e7ce; opacity:.85; }
+  .header-right { text-align:right; font-size:11.5px; line-height:2; opacity:.9; }
+  .header-right a { color:#f7e7ce; text-decoration:none; }
+  .accent-bar { height:5px; background:linear-gradient(to right,#cca98d,#9f624f,#59372b); }
+  .content { display:grid; grid-template-columns:1fr 1.6fr; }
+  .col-left { background:#59372b; color:#f7e7ce; padding:26px 22px; }
+  .col-left .section-title { font-family:'Playfair Display',serif; font-size:11.5px; letter-spacing:3px; text-transform:uppercase; color:#cca98d; border-bottom:1px solid #9f624f; padding-bottom:5px; margin:18px 0 9px; }
+  .col-left .section-title:first-child { margin-top:0; }
+  .col-left p, .col-left li { font-size:10.5px; line-height:1.6; color:#f7e7ce; opacity:.9; }
+  .col-left ul { list-style:none; padding:0; }
+  .col-left ul li::before { content:"▸ "; color:#cca98d; font-size:9.5px; }
+  .tag { display:inline-block; background:rgba(204,169,141,.2); border:1px solid #9f624f; color:#cca98d; font-size:9px; padding:2px 6px; border-radius:10px; margin:2px 2px; }
+  .lang-item { display:flex; justify-content:space-between; align-items:center; margin-bottom:5px; }
+  .lang-bar { width:70px; height:4px; background:rgba(255,255,255,.15); border-radius:2px; overflow:hidden; }
+  .lang-bar-fill { height:100%; background:linear-gradient(to right,#cca98d,#9f624f); border-radius:2px; }
+  .col-right { background:#fdf6ef; padding:26px 28px 26px 24px; }
+  .col-right .section-title { font-family:'Playfair Display',serif; font-size:11.5px; letter-spacing:3px; text-transform:uppercase; color:#9f624f; border-bottom:2px solid #cca98d; padding-bottom:5px; margin:18px 0 9px; }
+  .col-right .section-title:first-child { margin-top:0; }
+  .entry { margin-bottom:10px; }
+  .entry-header { display:flex; justify-content:space-between; align-items:baseline; }
+  .entry-title { font-size:11.5px; font-weight:700; color:#59372b; }
+  .entry-date { font-size:9.5px; color:#9f624f; font-style:italic; white-space:nowrap; margin-left:6px; }
+  .entry-org { font-size:10px; color:#9f624f; font-style:italic; margin-bottom:2px; }
+  .entry-desc { font-size:10px; line-height:1.55; color:#4a2c1a; }
+  .award-tag { display:inline-block; background:linear-gradient(135deg,#cca98d22,#9f624f22); border-left:3px solid #cca98d; padding:5px 9px; margin-bottom:5px; width:100%; }
+  .award-tag .award-title { font-size:10.5px; font-weight:700; color:#59372b; }
+  .award-tag .award-org { font-size:9.5px; color:#9f624f; font-style:italic; }
+  .research-box { background:linear-gradient(135deg,#59372b08,#9f624f12); border:1px solid #cca98d; border-left:4px solid #9f624f; padding:10px 12px; margin-bottom:8px; border-radius:0 4px 4px 0; }
+  .research-box .r-title { font-size:11px; font-weight:700; color:#59372b; margin-bottom:3px; }
+  .research-box .r-text { font-size:10px; line-height:1.55; color:#4a2c1a; }
+  .unique-box { background:linear-gradient(135deg,#cca98d18,#9f624f0a); border:1px dashed #cca98d; border-left:4px solid #cca98d; padding:10px 12px; margin-bottom:8px; border-radius:0 4px 4px 0; }
+  .unique-box .u-label { font-size:9.5px; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:#9f624f; margin-bottom:4px; }
+  .unique-box .u-text { font-size:10px; line-height:1.6; color:#4a2c1a; }
+  .badge { display:inline-block; background:#59372b; color:#cca98d; font-size:8.5px; padding:2px 6px; border-radius:3px; margin-right:3px; margin-top:4px; letter-spacing:.5px; }
+  .footer { background:#2c1810; color:#cca98d; text-align:center; font-size:9.5px; padding:9px 20px; letter-spacing:.8px; }
+  @media print { body { width:210mm; } .header,.col-left { -webkit-print-color-adjust:exact; print-color-adjust:exact; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <h1>Manel Baali</h1>
+    <div class="subtitle">Maîtrise en technologies de l'information · UQAM</div>
+  </div>
+  <div class="header-right">
+    <a href="https://www.linkedin.com/in/manelbaali/">🔗 linkedin.com/in/manelbaali</a><br>
+    Montréal, Québec, Canada<br>
+    Boursière CRSH BESC M · 2026–2027
+  </div>
+</div>
+<div class="accent-bar"></div>
+
+<div class="content">
+  <div class="col-left">
+    <div class="section-title">À propos</div>
+    <p>Étudiante à la maîtrise en TI, passionnée de cybersécurité, gouvernance algorithmique, données et transformation numérique. Combine rigueur technique et pensée stratégique pour créer des solutions innovantes et centrées sur l'humain.</p>
+
+    <div class="section-title">Formation</div>
+    <ul>
+      <li><strong>M. Sc. Technologies de l'information</strong><br><span style="font-size:9.5px;opacity:.8;">UQAM — En cours</span></li>
+      <li style="margin-top:5px;"><strong>B.A.A. – Technologies de l'information</strong><br><span style="font-size:9.5px;opacity:.8;">UQAM — Mention Honneur</span></li>
+      <li style="margin-top:5px;"><strong>DEC – Affaires internationales</strong><br><span style="font-size:9.5px;opacity:.8;">Collège Dawson</span></li>
+    </ul>
+
+    <div class="section-title">Compétences techniques</div>
+    <p style="margin-bottom:3px;font-size:9.5px;color:#cca98d;">Données & analytique</p>
+    <div><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">R</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">SAS</span><span class="tag">Pandas</span></div>
+    <p style="margin:6px 0 3px;font-size:9.5px;color:#cca98d;">Développement</p>
+    <div><span class="tag">HTML5</span><span class="tag">JavaScript</span><span class="tag">CSS</span><span class="tag">Java</span><span class="tag">C++</span><span class="tag">Node.js</span><span class="tag">Git/GitHub</span></div>
+    <p style="margin:6px 0 3px;font-size:9.5px;color:#cca98d;">Design & UX</p>
+    <div><span class="tag">Figma</span><span class="tag">Adobe Suite</span><span class="tag">Wireframing</span><span class="tag">Design Thinking</span></div>
+
+    <div class="section-title">Langues</div>
+    <div class="lang-item"><span style="font-size:10.5px;">Français</span><div class="lang-bar"><div class="lang-bar-fill" style="width:100%"></div></div></div>
+    <div class="lang-item"><span style="font-size:10.5px;">Anglais</span><div class="lang-bar"><div class="lang-bar-fill" style="width:100%"></div></div></div>
+    <div class="lang-item"><span style="font-size:10.5px;">Berbère</span><div class="lang-bar"><div class="lang-bar-fill" style="width:100%"></div></div></div>
+    <div class="lang-item"><span style="font-size:10.5px;">Arabe</span><div class="lang-bar"><div class="lang-bar-fill" style="width:55%"></div></div></div>
+
+    <div class="section-title">Aptitudes</div>
+    <ul>
+      <li>Résolution de problèmes</li><li>Gestion du temps</li><li>Adaptabilité</li><li>Sens de la confidentialité</li><li>Recherche & rédaction académique</li>
+    </ul>
+  </div>
+
+  <div class="col-right">
+    <div class="section-title">Recherche — Mémoire en cours</div>
+
+    <div class="research-box">
+      <div class="r-title">🔬 Gouvernance algorithmique dans les systèmes de gestion migratoire</div>
+      <div class="r-text">Recherche sur les biais algorithmiques (données, modélisation, déploiement, institutionnel) dans les outils décisionnels automatisés en gestion migratoire. Développement d'un cadre de gouvernance évalué dans des contextes canadien, européen et américain.</div>
+      <div style="margin-top:5px;">
+        <span class="badge">Méthodologie DSR</span>
+        <span class="badge">Analyse de contenu</span>
+        <span class="badge">Entretiens semi-directifs</span>
+      </div>
+    </div>
+
+    <div class="unique-box">
+      <div class="u-label">✦ Ce qui rend cette recherche unique</div>
+      <div class="u-text">Ma recherche se situe à l'intersection des <strong>systèmes d'information, des technologies d'aide à la décision et de la gouvernance publique</strong>. J'étudie comment les infrastructures numériques et les systèmes d'information transforment les processus administratifs en gestion migratoire, en mettant l'accent sur la conception des systèmes, la prise de décision automatisée, ainsi que les enjeux de transparence, de responsabilité et de surveillance institutionnelle. Ce positionnement place mes travaux à une intersection rare et d'actualité entre la théorie des SI, l'administration publique et l'éthique de l'IA — en répondant à un manque critique dans la façon dont les outils algorithmiques sont conçus, déployés et gouvernés dans des contextes humains à enjeux élevés.</div>
+    </div>
+
+    <div style="font-size:9.5px;color:#9f624f;margin-bottom:3px;">🤝 Collaboration institutionnelle : <strong>MIFI – Gouvernement du Québec</strong></div>
+    <div style="font-size:9.5px;color:#9f624f;margin-bottom:2px;">💰 Financement : <strong>CRSH – BESC M (Bourse d'études supérieures du Canada Maîtrise)</strong></div>
+
+    <div class="section-title">Expérience professionnelle</div>
+    <div class="entry">
+      <div class="entry-header"><div class="entry-title">Conseillère en gestion de l'information</div><div class="entry-date">Juin 2025 – Présent</div></div>
+      <div class="entry-org">Ministère de l'Immigration, de la Francisation et de l'Intégration (MIFI)</div>
+      <div class="entry-desc">Soutien stratégique au Secrétariat général. Gouvernance documentaire, développement du greffe numérique, programmation et automatisation (JSON, Python, tableaux de bord).</div>
+    </div>
+    <div class="entry">
+      <div class="entry-header"><div class="entry-title">Analyste en conformité</div><div class="entry-date">Févr. 2022 – Mai 2025</div></div>
+      <div class="entry-org">Desjardins</div>
+      <div class="entry-desc">Conformité financière et des données, analyse des risques réglementaires, suivi des politiques internes et contrôles de conformité dans un contexte de services aux membres.</div>
+    </div>
+    <div class="entry">
+      <div class="entry-header"><div class="entry-title">Agente services aux membres</div><div class="entry-date">Nov. 2021 – Févr. 2022</div></div>
+      <div class="entry-org">Desjardins</div>
+      <div class="entry-desc">Accompagnement des membres, transactions monétaires, promotion de l'autonomie numérique et conseil personnalisé.</div>
+    </div>
+    <div class="entry">
+      <div class="entry-header"><div class="entry-title">Agente de réception</div><div class="entry-date">Sept. – Nov. 2021</div></div>
+      <div class="entry-org">BravoTelecom-Vidéotron</div>
+      <div class="entry-desc">Accueil, gestion des dossiers et activation de services de télécommunication.</div>
+    </div>
+
+    <div class="section-title">Prix & distinctions</div>
+    <div class="award-tag"><div class="award-title">🏆 Bourse d'études supérieures du Canada Maîtrise (BESC M)</div><div class="award-org">CRSH — 2026–2027 · Bourse fédérale d'excellence en recherche</div></div>
+    <div class="award-tag"><div class="award-title">🏅 Bourses Hélène et Jean-Louis-Tassé</div><div class="award-org">Fondation de l'UQAM — Mai 2025</div></div>
+    <div class="award-tag"><div class="award-title">🏅 Bourse Richard-Guay</div><div class="award-org">Fondation de l'UQAM — Déc. 2024 · Moyenne > 3,5/4,3</div></div>
+    <div class="award-tag"><div class="award-title">🏅 Bourse d'excellence académique – Femmes en STIM</div><div class="award-org">Fondation de l'UQAM — Janv. 2023</div></div>
+
+    <div class="section-title">Bénévolat & engagement</div>
+    <div class="entry">
+      <div class="entry-header"><div class="entry-title">Agente des impôts (bénévole)</div><div class="entry-date">Revenu Québec — 2020–2023</div></div>
+      <div class="entry-org">Revenu Québec</div>
+    </div>
+    <div class="entry">
+      <div class="entry-header"><div class="entry-title">Bénévole d'accueil – Étudiants internationaux</div><div class="entry-date">Collège Dawson — 2019–2021</div></div>
+    </div>
+    <div class="entry">
+      <div class="entry-header"><div class="entry-title">Radio étudiante & développement communautaire</div><div class="entry-date">Boscoville · Coup de pouce jeunesse — 2014–2019</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">UQAM — École des sciences de la gestion · Maîtrise en technologies de l'information · Montréal, Canada · linkedin.com/in/manelbaali</div>
+</body>
+</html>
